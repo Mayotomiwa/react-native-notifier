@@ -1,0 +1,33 @@
+{
+  "name": "@seybar/react-native-notifier",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "expo": "*",
+    "react": "^19.1.0",
+    "react-native": "^0.80.1",
+    "react-native-vector-icons": "*"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-native": "^0.80.1"
+  }
+}
