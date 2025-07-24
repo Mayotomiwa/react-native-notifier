@@ -19,7 +19,8 @@ import { defaultColors, useCurrentTheme } from "./themes";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
-export const Notifier: React.FC<NotifierProps> = ({
+// Fix: Use explicit return type instead of React.FC
+export const Notifier = ({
   visible,
   onClose,
   title,
@@ -32,7 +33,7 @@ export const Notifier: React.FC<NotifierProps> = ({
   backdropColor,
   iconBackGroundColor,
   theme = "auto",
-}) => {
+}: NotifierProps): React.JSX.Element | null => {
   const systemColorScheme = useColorScheme();
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0.3)).current;

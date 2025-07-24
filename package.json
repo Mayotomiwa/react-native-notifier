@@ -1,9 +1,10 @@
 {
   "name": "@seybar/react-native-notifier",
-  "version": "1.0.1",
-  "main": "lib/index.js",
+  "version": "1.0.4",
+  "main": "lib/Notifier.js",
   "devDependencies": {
-    "@types/react": "^19.1.8",
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.80.0",
     "typescript": "^5.8.3"
   },
   "scripts": {
@@ -11,26 +12,38 @@
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react-native",
+    "notification",
+    "modal",
+    "alert",
+    "toast",
+    "popup",
+    "theme",
+    "dark-mode",
+    "animation",
+    "typescript"
+  ],
+  "author": "Seybar",
   "license": "MIT",
-  "description": "",
-  "types": "lib/index.d.ts",
+  "description": "A beautiful, customizable notification component for React Native with theme support, smooth animations, and extensive icon library integration.",
+  "types": "lib/Notifier.d.ts",
   "files": [
     "lib",
     "README.md"
   ],
   "peerDependencies": {
-    "expo": "*",
-    "react": "^19.1.0",
-    "react-native": "^0.80.1",
-    "react-native-vector-icons": "*"
+    "@expo/vector-icons": "^14.0.0",
+    "expo": ">=50.0.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
   },
-  "dependencies": {
-    "@expo/vector-icons": "^14.1.0",
-    "@jest/globals": "^30.0.5",
-    "@testing-library/react-native": "^13.2.0",
-    "react": "^19.1.0",
-    "react-native": "^0.80.1"
+  "peerDependenciesMeta": {
+    "expo": {
+      "optional": true
+    },
+    "@expo/vector-icons": {
+      "optional": true
+    }
   }
 }
